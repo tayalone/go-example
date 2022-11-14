@@ -12,7 +12,7 @@ type Service interface {
 /*Repo is Method of Repo*/
 type Repo interface {
 	Get() []Todo
-	GetByPk(uint) (Todo error)
+	GetByPk(uint) (Todo, error)
 	Create(string, string) Todo
 	UpdateByPk(uint, *string, *string, *bool) error
 	RemoveByID(uint) error
