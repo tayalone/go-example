@@ -15,5 +15,5 @@ type Repo interface {
 	GetByPk(uint) (Todo, error)
 	Create(string, string) Todo
 	UpdateByPk(uint, *string, *string, *bool) error
-	RemoveByID(uint) error
+	RemoveByPK(uint) error
 }
